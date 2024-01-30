@@ -3,6 +3,7 @@
 /* body styling properties */
 body {
   font-size: 16px;
+  font-family: PT serif;
   scroll-behavior: smooth;
   flex-wrap: wrap;
 }
@@ -11,7 +12,7 @@ body {
 header {
   display: flex;
   top: 0;
-  width: 100.5%;
+  width: 100%;
   justify-content: space-between;
   font-size: 1.5rem;
   background-color: rgb(242, 211, 125);
@@ -20,8 +21,8 @@ header {
 /* text area styling */
 textarea {
   background: transparent;
-  border: 1px solid #000709;
-  border-radius: 5px;
+  border-left: 1px solid black;
+  border: none;
   resize: none;
   color: #000000;
   padding: 6px;
@@ -33,7 +34,6 @@ textarea {
 .calender {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .description {
@@ -45,16 +45,17 @@ textarea {
 }
 
 .row {
-  border: 1px solid white;
+  border-top: 1px solid white;
 }
 
 .hour {
-  background: linear-gradient(
-    rgb(251, 255, 134), 
-		rgba(110, 173, 255, 0.805) 70%);
+  background-color:
+		rgba(151, 196, 254, 0.805);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
   color: #000000;
   border: 1px solid #000000;
-  border-radius: 5px;
+  flex-wrap: wrap;
 }
 
 
@@ -75,9 +76,9 @@ textarea {
 }
  /* save button styling */
 .saveBtn {
-  border: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  border-left: 1px solid black;
   background-color: #717e82;
   color: rgb(255, 255, 255);
 }
@@ -87,7 +88,7 @@ font-size: 20px;
 }
 
 .saveBtn i:hover {
-  font-size: 30px;
+  font-size: 35px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -95,5 +96,5 @@ font-size: 20px;
 
 /* current time and date orientation */
 #time-display {
-  padding-top: 10px;
+  padding-top: 20px;
 }
